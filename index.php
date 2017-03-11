@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta charset="UTF-8">
         <style>
             fieldset {
                 height: 250px;
@@ -8,6 +9,7 @@
                 border: 2px solid #000000;
                 margin: 10px;
             }
+        
         </style>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
         <script src="ajax-calls.js"></script>
@@ -17,13 +19,13 @@
         <legend>Dealer Hand</legend>
     </fieldset>
     
-    <input type='button' value='Deal' />
+    <input type='button' value='Deal' onclick="deal();"/>
     <input type='button' value='Draw' />
 
     <fieldset>
         <legend>Player Hand</legend>
         <div id='player-hand'>
-            
+           
         </div>
     </fieldset>
 </html>
