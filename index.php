@@ -1,3 +1,12 @@
+<?php
+    if ($_POST) {
+        if ($_POST['submit'] == 'hit') {
+            echo 'TESTING';
+        }
+    }
+
+?>
+
 <!DOCTYPE html>
 <html>
     <head>
@@ -28,4 +37,7 @@
            
         </div>
     </fieldset>
+    <form method='post'>
+        <input type='submit' name='submit' value='hit' />
+    </form>
 </html>
