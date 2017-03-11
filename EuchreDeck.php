@@ -1,5 +1,5 @@
 <?php
-
+include_once 'StandardDeck.php';
 class EuchreDeck extends StandardDeck {
     
     public function __construct() { 
